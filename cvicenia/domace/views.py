@@ -12,13 +12,13 @@ def domace(request):
 
 def du2_vizitka(request):
     udaje = {
-        "meno": "Matias",
+        "meno": "Matiáš",
         "trieda": "3.AT",
         "vek": 17,
         "predmety": [
             "Programovanie",
             "Matematika",
-            "Hokej",
+            "Telesna výchova",
         ],
     }
 
