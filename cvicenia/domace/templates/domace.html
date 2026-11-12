@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Domáce úlohy</title>
+</head>
+<body>
+
+    <h1>Moje domáce úlohy</h1>
+
+    {% for nazov, uloha in ulohy.items %}
+        <p>{{ nazov }}: {{ uloha }}</p>
+    {% endfor %}
+
+</body>
+</html>
