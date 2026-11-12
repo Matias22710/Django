@@ -9,7 +9,6 @@ def domace(request):
 
     return render(request, 'domace.html', {'ulohy': ulohy})
 
-
 def du2_vizitka(request):
     udaje = {
         "meno": "Matiáš",
