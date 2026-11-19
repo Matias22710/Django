@@ -1,0 +1,19 @@
+<h1>Obdĺžnik</h1>
+
+<form method="post">
+    {% csrf_token %}
+    <label for="a">Dĺžka:</label>
+    <input type="number" name="a" required>
+    <br>
+    <label for="b">Šírka:</label>
+    <input type="number" name="b" required>
+    <br>
+    <button type="submit">Vypočítať obvod a obsah</button>
+</form>
+
+{% if error %}
+    <p>{{ error }}</p>
+{% elif vysledky %}
+    <p>Obvod: {{ vysledky.obvod }}</p>
+    <p>Obsah: {{ vysledky.obsah }}</p>
+{% endif %}

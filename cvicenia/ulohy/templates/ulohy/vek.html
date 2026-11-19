@@ -1,0 +1,21 @@
+<h1>Vek</h1>
+
+<form method="post">
+    {% csrf_token %}
+    <label for="rok_narodenia">Rok narodenia:</label>
+    <input type="number" name="rok_narodenia" required >
+    <br>
+    <label for="mesiac_narodenia">Mesiac narodenia:</label>
+    <input type="number" name="mesiac_narodenia" required>
+    <br>
+    <label for="den_narodenia">Deň narodenia:</label>
+    <input type="number" name="den_narodenia" required>
+    <br>
+    <button type="submit">Vypočítať vek</button>
+</form>
+
+{% if error %}
+    <p>{{ error }}</p>
+{% elif vek %}
+    <p>Vek: {{ vek }}</p>
+{% endif %}
